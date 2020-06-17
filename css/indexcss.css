@@ -1,0 +1,950 @@
+.table-dark{
+  color: #fff;
+  background-color: transparent;
+}
+.table-dark-1{
+  color: #fff;
+  background-color: #343a40;
+}
+#errorquery{
+    display: flex;
+    justify-content: space-between;
+    border-bottom-width: 4px;
+    border-bottom-color: DarkTurquoise;
+    border-bottom-style: solid;
+    border-radius: 3px;
+    padding-right: 80px;
+    padding-left: 40px;
+    background-color: white;
+}
+body{
+  padding: 0px;
+  margin: 0px;
+  background: url("../img/travel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+thead {
+    background-color: white;
+    color: black;
+    border: solid 0 white;
+    border-bottom: solid 5px DarkTurquoise;
+}
+tr:hover td {
+  background-color: #369681;
+  color: white;
+}
+#result{
+  font-size: 20px;
+  padding: 1px;
+  margin: 10px;
+}
+/*************************/
+/*EXCHANGE DIV COMPONENTS*/
+/*************************/
+#prices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-width: 4px;
+    border-bottom-color: DarkTurquoise;
+    border-bottom-style: solid;
+    background-color: white;
+}
+#date-prices{
+  color: fuchsia;
+  font-family: Lato , sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+#cost-prices{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 40%;
+}
+.price{
+    display: flex;
+    flex-direction: row;
+}
+.price img{
+    height: 20px;
+}
+.price div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10px;
+    font-size: 17px;
+    font-family: Lato , sans-serif;
+    font-weight: bolder;
+    color: #333333;
+}
+/*************************/
+/*END EXCHANGE DIV COMPONENTS*/
+/*************************/
+/*****************************/
+/*REGISTER PACKAGE COMPONENTS*/
+/*****************************/
+#form-packages-input{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#form-packages-input form{
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-color: white;
+  box-shadow: 4px 4px 10px grey;
+}
+#form-packages-input form h1{
+  font-size: 40px;
+  font-family: Lato, sans-serif;
+  padding: 15px;
+  margin: 0px;
+  text-align: center;
+}
+#form-pi-button{
+  font-size: 30px;
+  font-family: Lato, sans-serif;
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px #333333 solid;
+  border-radius: 10px;
+  outline: 0px;
+  background-color: white;
+}
+.form-pi-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.form-pi{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.form-pi span{
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px;
+}
+.form-pi input, .form-pi input:hover, .form-pi input:active, .form-pi input:focus, .form-pi input:link{
+  border: 2px #333333 solid;
+  padding: 5px;
+  border-radius: 15px;
+  outline: 0px;
+  background-color: #ffffff;
+}
+.check-text_input, check-text_input:focus{
+  border: 2px #333333 solid;
+  padding:10px;
+  border-radius: 15px;
+  outline: 0px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #ffffff;
+  margin: 1px;
+}
+/*********************************/
+/*END REGISTER PACKAGE COMPONENTS*/
+/********************************/
+
+/*****************************/
+/*REGISTER TASAS COMPONENTS*/
+/*****************************/
+#form-tasas-input{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+#form-tasas-input form{
+  margin: 20px;
+  padding: 20px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  background-color: white;
+  box-shadow: 4px 4px 10px grey;
+}
+#form-tasas-input form h1{
+  font-size: 40px;
+  font-family: Lato, sans-serif;
+  padding: 15px;
+  margin: 0px;
+  text-align: center;
+}
+#form-pi-button-tasas{
+  font-size: 30px;
+  font-family: Lato, sans-serif;
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px #333333 solid;
+  border-radius: 10px;
+  outline: 0px;
+  background-color: white;
+}
+#form-pi-button-view{
+  font-size: 30px;
+  font-family: Lato, sans-serif;
+  padding: 10px;
+  margin-top: 20px;
+  border: 2px #333333 solid;
+  border-radius: 10px;
+  outline: 0px;
+  background-color: white;
+}
+.form-pi-tasas{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.form-pi-tasas span{
+  font-family: Lato, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 5px;
+}
+.form-pi-tasas input, .form-pi-tasas input:hover, .form-pi-tasas input:active, .form-pi-tasas input:focus, .form-pi-tasas input:link{
+  border: 2px #333333 solid;
+  padding: 5px;
+  border-radius: 15px;
+  outline: 0px;
+  background-color: #CBCBCB;
+}
+.check-text_input, check-text_input:focus{
+  border: 2px #333333 solid;
+  padding:10px;
+  border-radius: 15px;
+  outline: 0px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #CBCBCB;
+}
+/*****************************/
+/*END REGISTER TASAS COMPONENTS*/
+/*****************************/
+
+/**********************/
+/*COMMISION Components*/
+/**********************/
+#plans{
+  margin:20px;
+  display: flex;
+  flex-direction: column;
+}
+.label{
+  font-size: 25px;
+  padding: 6px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+.input{
+  width: 480px;
+  border: 0px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.plan-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.plan{
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  width: 35%;
+  background-color: #F7F7F7;
+  box-shadow: 1px 1px 5px grey;
+  border-radius: 25px;
+}
+.plan-description{
+  margin:15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.plan-description h1{
+  font-size: 30px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  margin:0px;
+}
+.plan-description h3{
+  font-size: 10px;
+  font-family: 'Lato', sans-serif;
+  color: #333333;
+  text-align: justify;
+}
+.plan-description h4{
+  font-size: 25px;
+  font-family: 'Lato', sans-serif;
+  color: #333333;
+  text-align: center;
+  margin: 5px;
+  padding: 3px;
+  background-color: white;
+  border-radius: 25px;
+}
+.logo-box{
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 25px;
+  background-color: white;
+  box-shadow: 1px 1px 5px grey;
+}
+.logo-box h1{
+  margin: 0px;
+  font-size: 80px;
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+}
+/***************************/
+/*END COMMISION Components*/
+/**************************/
+
+/********************/
+/*CONTACT COMPONENTS*/
+/********************/
+#contact{
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 15px;
+}
+#contact h1{
+  font-size: 80px;
+  color: #000000;
+  margin: 0px;
+  text-align: center;
+}
+#form-contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+#form-contact form{
+  border: 2px #333333 solid;
+  width: 500px;
+  padding: 20px;
+  background-color: DarkTurquoise;
+  border-radius: 15px;
+}
+.label-contact{
+  font-size: 25px;
+  padding: 6px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+}
+.input-contact{
+  width: 100%;
+  border: 0px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.form-pi-package input, .form-pi-package input:hover, .form-pi-package input:active, .form-pi-package input:focus, .form-pi-package input:link{
+  border: 2px #333333 solid;
+  padding: 5px;
+  border-radius: 15px;
+  outline: 0px;
+  background-color: #CBCBCB;
+  width: 100%;
+}
+.check-text_package, check-text_package:focus{
+  border: 2px #333333 solid;
+  padding:10px;
+  border-radius: 15px;
+  outline: 0px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #CBCBCB;
+}
+#button-form-contact input{
+  background-color: white;
+  border-radius: 5px;
+  border:0px;
+  padding: 10px;
+}
+#button-form-contact{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/*************************/
+/*END CONTACT COMPONENTS*/
+/************************/
+
+/*******************************/
+/*Check code shipping Componets*/
+/*******************************/
+#check-box-img{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#check-box-img img{
+  width: 25%;
+  padding: 15px;
+}
+#checkCode{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#check-form{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 2px 2px 10px grey;
+  border-radius: 15px;
+  margin: 20px;
+}
+#check-form h1{
+  font-family: 'Lato', sans-serif;
+  color: #333333;
+  font-size: 40px;
+  margin: 0px;
+  padding:20px;
+  text-align: center;
+  font-weight: bold;
+}
+#check-text, #check-text:focus{
+  border: 2px #333333 solid;
+  padding:10px;
+  border-radius: 15px;
+  outline: 0px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #CBCBCB;
+}
+#check-button{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#check-button input, #check-button input:focus, #check-button input:hover,  #check-button input:active{
+  border: 2px #333333 solid;
+  padding:10px;
+  font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 15px;
+  outline: 0px;
+}
+/***********************************/
+/*END Check code shipping Componets*/
+/***********************************/
+
+/*******************/
+/*Cards Components*/
+/*******************/
+.card{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: white;
+  box-shadow: 2px 1px 10px grey;
+  border-radius: 15px;
+  box-shadow: #333333;
+  margin:20px;
+}
+.card2{
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background-color: white;
+  box-shadow: 2px 1px 10px grey;
+  border-radius: 15px;
+  box-shadow: #333333;
+  margin:20px;
+}
+.head-card, .head-card img{
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.head-card-exchangeHouse, .head-card-exchangeHouse img{
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.head-card-shipments, .head-card-shipments img{
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.body-card{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  color: #333333;
+/*padding: 20px;*/
+  font-size: 20px;
+  padding-top: 10px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+}
+.body-card-exchangeHouse{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  color: #333333;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+}
+.body-card-shipments{
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+  color: #333333;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+}
+.button-card{
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  color: darkmagenta;
+}
+.button-card a{
+  text-decoration: none;
+  color: #333333;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px #333333 solid;
+  font-weight: bold;
+}
+.button-card button{
+  text-decoration: none;
+  color: #333333;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px #333333 solid;
+  font-weight: bold;
+}
+#cards{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+}
+/**********************/
+/*END Cards Components*/
+/**********************/
+
+.logo{
+  height: 20px;
+}
+.button{
+  text-decoration: none;
+  font-size: 25px;
+  color: #333333;
+  font-family: 'Oswald', sans-serif;
+}
+.naverror{
+  display: flex;
+  justify-content: center;
+  border-bottom-width: 4px;
+  border-bottom-color: DarkTurquoise;
+  border-bottom-style: solid;
+  border-radius: 3px;
+  padding-right: 80px;
+  padding-left: 40px;
+  background-color: white;
+}
+#mobile-menu{
+  display: none;
+}
+#footer{
+  left:0px;
+  bottom:0px;
+  width: 100%;
+  padding-top: 10px;
+  position: fixed;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  font-family: 'Oswald', sans-serif;
+  border-top-width: 1.5px;
+  border-top-color: DarkTurquoise;
+  border-top-style: solid;
+  border-radius: 3px;
+  margin: 0px;
+}
+#nav{
+  display: flex;
+  justify-content: space-between;
+  padding-right: 80px;
+  padding-left: 40px;
+  background-color: white;
+}
+/*border-bottom-width: 4px;
+border-bottom-color: DarkTurquoise;
+border-bottom-style: solid;*/
+#home-imagotipo{
+  height: 100px;
+}
+#home{
+  float: left;
+}
+#nav-menu{
+  display: flex;
+  justify-content: center;
+}
+#nav-menu div{
+  float: right;
+}
+#nav-menu ul{
+  padding:0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+#nav-menu ul li{
+  padding:10px;
+  align-self:center;
+}
+#button-login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/**************************/
+/*SOCIAL MEDIA COMPONENTS*/
+/************************/
+#social-media-center{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#social-media{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+}
+.social-media-box{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.social-media-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 35%;
+  box-shadow: 3px 3px 10px gray;
+  border-radius: 15px;
+  margin: 20px;
+  background-color: white;
+}
+.social-media-content img{
+  width: 80px;
+  border-radius: 15px;
+}
+.social-media-content div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+.social-media-content div a, .social-media-content div a:link, .social-media-content div a:hover, .social-media-content div a:active, .social-media-content div a:focus{
+  text-decoration: none;
+  color: black;
+  font-family: Lato, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  border: 3px #333333 solid;
+  border-radius: 15px;
+  text-align: center;
+  background-color: darkturquoise;
+}
+/**************************/
+/*END SOCIAL MEDIA COMPONENTS*/
+/************************/
+
+/**************************************/
+/*MEDIAS QUERYS*/
+/**************************************/
+@media screen and (max-width: 1080px) {
+
+  #mobile-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #nav-menu{
+    display: none;
+  }
+
+  #nav-menu ul{
+    flex-direction: column;
+  }
+
+  #home-imagotipo{
+    height: 80px;
+    z-index: 2;
+  }
+
+  #home{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 20px;
+
+  }
+
+  #nav{
+    padding: 0px;
+    flex-direction: column;
+  }
+
+  #button-login{
+    flex-direction: row;
+    padding: 10px;
+    display: none;
+  }
+
+  #nav:hover #button-login, #nav:hover #nav-menu{
+    display: flex;
+    z-index: 1;
+  }
+
+  .logo{
+    height: 18px;
+  }
+
+  #check-box-img img{
+    width: 50%;
+    padding: 15px;
+  }
+
+  /*Cards Components*/
+    #cards{
+      flex-direction: column;
+      padding: 0px;
+    }
+
+    .card{
+      margin-left: 30px;
+      margin-right: 30px;
+      width: auto;
+      box-shadow: 0px;
+    }
+
+    .button{
+      font-size: 20px;
+    }
+  /*END Cards Components*/
+
+
+
+    /*COMMISION Components*/
+    .label{
+      font-size: 20px;
+    }
+
+    .input{
+      width: 90%;
+    }
+
+    .plan-container{
+      flex-direction: column;
+    }
+
+    .plan{
+      width: auto;
+      margin: 10px;
+    }
+
+    .plan-description h1{
+      font-size: 25px;
+    }
+
+    .plan-description h3{
+      font-size: 10px;
+    }
+
+    .plan-description h4{
+      font-size: 20px;
+    }
+
+    #contact h1{
+      font-size: 40px;
+      padding: 0px;
+      margin-top: 20px;
+    }
+
+    #form{
+      padding: 20px;
+    }
+
+    #contact{
+      margin: 0px;
+      border-radius: 0px;
+    }
+
+    #button-form input{
+      background-color: white;
+      border-radius: 5px;
+      border:0px;
+      padding: 10px;
+      width: 35%;
+    }
+
+    #button-form{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    #plans{
+      margin: 10px;
+    }
+    /*END COMMISION Components*/
+
+  /********************/
+  /*CONTACT COMPONENTS*/
+  /********************/
+    #contact h1{
+      font-size: 40px;
+      padding: 0px;
+      margin-top: 20px;
+    }
+
+    #form-commision{
+      padding: 20px;
+    }
+
+    #contact{
+      margin: 0px;
+      border-radius: 0px;
+    }
+
+    .label-commision{
+      font-size: 20px;
+    }
+
+    .input-commision{
+      width: 90%;
+    }
+
+    #button-form-commision input{
+      background-color: white;
+      border-radius: 5px;
+      border:0px;
+      padding: 10px;
+      width: 35%;
+    }
+
+    #button-form-commision{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    /********************/
+    /*END CONTACT COMPONENTS*/
+    /********************/
+
+}
+
+@media screen and (max-width: 1000px){
+  .form-pi-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .social-media-box{
+  	flex-direction: column;
+  }
+  .social-media-content{
+  	width: auto;
+  	margin: 10px;
+  }
+  #social-media{
+  	width: 90%;
+  }
+  #form-packages-input form{
+    margin: 10px;
+    padding: 15px;
+  }
+  #form-tasas-input form{
+    margin: 10px;
+    padding: 15px;
+  }
+/********************/
+/*EXCHANGE*/
+/********************/
+	#prices{
+		flex-direction: column;
+		justify-content: center;
+	}
+	#cost-prices{
+		display: flex;
+		flex-direction: column;
+		width: auto;
+	}
+	.price div{
+		font-size: 15px;
+	}
+	.price{
+		margin: 5px;
+	}
+	#date-prices{
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		padding: 15px;
+
+	}
+/********************/
+/*EXCHANGE*/
+/********************/
+}
+
+@media screen and (max-width: 320px) {
+     table {
+       display: block;
+       overflow-x: auto;
+     }
+}
