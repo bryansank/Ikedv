@@ -154,6 +154,17 @@
               </select>
             </div>
           </div>
+          <!-- 5 -->
+          <div class="form-pi-box">
+
+            <div class="form-pi-package">
+              <label for="receiverFinal_input">
+                <span>Quien Recibe:</span>
+              </label>
+              <input type="text" class="check-text_package" name="receiverFinal_input" placeholder="Quien Recibe" pattern="[A-Za-z0-9\s]+" maxlength="50" required />
+            </div>
+
+          </div>
           <!---->
           <div class="form-pi-box">
             <input id="form-pi-button" type="submit" name="submitPackage" value="Actualizar" for="update-form" />
@@ -254,6 +265,7 @@
                 <th>Tlf Compañia</th>
                 <th>Lugar Entrega</th>
                 <th>Destinario</th>
+                <th>Quien Recibe</th>
                 <th>Pasaporte</th>
                 <th>Estado</th>
                 <th>Acciones</th>
@@ -270,6 +282,7 @@
                 echo"<td align='center'>". $row['strPhoneCompany'] ."</td>";
                 echo"<td align='center'>". $row['strDeliveryPlace'] ."</td>";
                 echo"<td align='center'>". $row['strReceiver'] ."</td>";
+                echo"<td align='center'>". $row['strReceiverFinal'] ."</td>";
                 echo"<td align='center'>". $row['strPassport'] ."</td>";
 
                 //echo"<td align='center'>". $row['intState'] ."</td>";

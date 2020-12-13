@@ -127,7 +127,11 @@
   }
 
   function insertPackage($dbconnect,$error, $good){
-    /*$r;$p;$s;
+    /*
+    12/12/2020
+
+    $r;$p;$s;
+
     $code = "";$actual = "";$remaining = "";$place = "";$receiver = "";$passport = "";$price = "";$state = "";
 
     $code = $_POST['code_input'];
@@ -143,7 +147,7 @@
     $state = (int)$s;*/
 
     $s;
-    $strCode = "";$strPosition = "";$strCompany = "";$strPhoneCompany = "";$strDeliveryPlace = "";$strReceiver = "";$strPassport = "";$intState = "";
+    $strCode = "";$strPosition = "";$strCompany = "";$strPhoneCompany = "";$strDeliveryPlace = "";$strReceiver = ""; $strReceiverFinal = ""; $strPassport = "";$intState = "";
 
     $strCode = $_POST['code_input'];
     $strPosition = $_POST['actual_input'];
@@ -152,16 +156,18 @@
     $strPhoneCompany = $_POST['phoneCompany_input'];
     $strDeliveryPlace = $_POST['deliveryPlace_input'];
     $strReceiver = $_POST['receiver_input'];
+
+    $strReceiverFinal = $_POST['receiverFinal_input'];
     
     $strPassport = $_POST['passport_input'];
     
     $s = $_POST['state_input'];//int
     $intState = (int)$s;
 
-    if(!empty($_POST['code_input']) || !empty($_POST['actual_input']) || !empty($_POST['responsable_input']) || !empty($_POST['phoneCompany_input']) || !empty($_POST['deliveryPlace_input']) || !empty($_POST['receiver_input']) || !empty($_POST['passport_input']))
+    if(!empty($_POST['code_input']) || !empty($_POST['actual_input']) || !empty($_POST['responsable_input']) || !empty($_POST['phoneCompany_input']) || !empty($_POST['deliveryPlace_input']) || !empty($_POST['receiver_input']) || !empty($_POST['passport_input']) )
     {
       //comment0, exchange1, package2
-      $insertDB = "INSERT INTO T_PackageModuleVOne(strCode, strPosition, strCompany, strPhoneCompany, strDeliveryPlace, strReceiver, strPassport, intState) VALUES ('".$strCode."','".$strPosition."','".$strCompany."','".$strPhoneCompany."','".$strDeliveryPlace."','".$strReceiver."','".$strPassport."','".$intState."')";
+      $insertDB = "INSERT INTO T_PackageModuleVOne(strCode, strPosition, strCompany, strPhoneCompany, strDeliveryPlace, strReceiver, strReceiverFinal, strPassport, intState) VALUES ('".$strCode."','".$strPosition."','".$strCompany."','".$strPhoneCompany."','".$strDeliveryPlace."','".$strReceiver."','".$strReceiverFinal."','".$strPassport."','".$intState."')";
 
       $executeQuery = mysqli_query($dbconnect,$insertDB);
 
@@ -246,7 +252,7 @@
     $id = (int)$i;
 
     $s;
-    $strCode = "";$strPosition = "";$strCompany = "";$strPhoneCompany = "";$strDeliveryPlace = "";$strReceiver = "";$strPassport = "";$intState = "";
+    $strCode = "";$strPosition = "";$strCompany = "";$strPhoneCompany = "";$strDeliveryPlace = "";$strReceiver = ""; $strReceiverFinal = ""; $strPassport = "";$intState = "";
 
     $strCode = $_POST['code_input'];
     $strPosition = $_POST['actual_input'];
@@ -255,6 +261,8 @@
     $strPhoneCompany = $_POST['phoneCompany_input'];
     $strDeliveryPlace = $_POST['deliveryPlace_input'];
     $strReceiver = $_POST['receiver_input'];
+
+    $strReceiverFinal = $_POST['receiverFinal_input'];
     
     $strPassport = $_POST['passport_input'];
     
@@ -265,7 +273,16 @@
     {
       //comment0, exchange1, package2
 
-      $updateDB = "UPDATE T_PackageModuleVOne SET strCode = '".$strCode."', strPosition = '".$strPosition."', strCompany = '".$strCompany."', strPhoneCompany = '".$strPhoneCompany."', strDeliveryPlace = '".$strDeliveryPlace."', strReceiver = '".$strReceiver."', strPassport = '".$strPassport."', intState = '".$intState."' WHERE id_package = '".$id."'";
+      $updateDB = "UPDATE T_PackageModuleVOne 
+                  SET strCode = '".$strCode."', 
+                  strPosition = '".$strPosition."', 
+                  strCompany = '".$strCompany."', 
+                  strPhoneCompany = '".$strPhoneCompany."', 
+                  strDeliveryPlace = '".$strDeliveryPlace."', 
+                  strReceiver = '".$strReceiver."', 
+                  strReceiverFinal = '".$strReceiverFinal."',
+                  strPassport = '".$strPassport."', 
+                  intState = '".$intState."' WHERE id_package = '".$id."'";
 
       $executeQuery = mysqli_query($dbconnect,$updateDB);
 

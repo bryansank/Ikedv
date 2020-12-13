@@ -54,6 +54,10 @@
                       echo"<th align='center'>". $row['strReceiver'] ."</th>";
                     echo"</tr>";
                     echo"<tr>";
+                      echo"<th>Quien Recibe:</th>";
+                      echo"<th align='center'>". $row['strReceiverFinal'] ."</th>";
+                    echo"</tr>";
+                    echo"<tr>";
                       echo"<th>Pasaporte:</th>";
                       echo"<th align='center'>". $row['strPassport'] ."$" ."</th>";
                     echo"</tr>";

@@ -41,7 +41,7 @@
     }
   ?>
 
-  <<?php
+  <?php
     $id = $_GET['id'];
     $select = "SELECT * FROM T_PackageModuleVOne WHERE id_package = $id";
     $result = mysqli_query($dbconnect, $select);
@@ -52,15 +52,14 @@
     <form id='update-form' action='' method='POST'>
         <h1>Ingrese los datos a Actualizar</h1>";
 
-          while($row = mysqli_fetch_array($result)){
+        while($row = mysqli_fetch_array($result)){
             echo"<div class='form-pi-box'>
-          <div class='form-pi-package'>
-            <label for='code_input'>
-              <span>Introduzca su código de envío:</span>
-            </label>";
+                <div class='form-pi-package'>
+                  <label for='code_input'>
+                    <span>Introduzca su código de envío:</span>
+                  </label>";
 
-            echo"<input value='". $row['strCode']."' type='text' class='check-text_input' name='code_input'
-            placeholder='Codigo de envio' pattern='[0-9]+' maxlength='11' required />
+          echo"<input value='". $row['strCode']."' type='text' class='check-text_input' name='code_input' placeholder='Codigo de envio' pattern='[0-9]+' maxlength='11' required />
           </div>";
 
           echo"<div class='form-pi-package'>
@@ -113,8 +112,9 @@
 
               echo"<input value='". $row['strReceiver']."' type='text' class='check-text_input' name='receiver_input'
               placeholder='Destinatario' pattern='[A-Za-z0-9\s]+' maxlength='60' required />
-          </div>
-            <div class='form-pi-package'>
+          </div>";
+
+          echo "<div class='form-pi-package'>
               <label for='passport_input'>
                <span>Introduzca Pasaporte:</span>
               </label>";
@@ -124,6 +124,16 @@
             </div>
         </div>
         <br />";
+        
+        echo"<div class='form-pi-box'>
+          <div class='form-pi-package'>
+            <label for='receiverFinal_input'>
+              <span>Quien Recibe:</span>
+            </label>";
+
+              echo"<input value='". $row['strReceiverFinal']."' type='text' class='check-text_input' name='receiverFinal_input'
+              placeholder='Quien Recibe' pattern='[A-Za-z0-9\s]+' maxlength='50' required />
+          </div>";
 
         /*echo"<div class='form-pi-box'>
           <div class='form-pi-package'>
@@ -134,20 +144,24 @@
         /*echo"<input value='". $row['flPrice']."' step='0.01' type='number' class='check-text_package' name='price_input'
           placeholder='Precio' required />*/
           
+        
         echo"<div class='form-pi-package'>
               <label for='state_input'>
                 <span>Introduzca Estado del paquete:</span>
               </label>";
 
-			  echo"  <select name='state_input' class='check-text_package'>
-                <option value='".$row['intState']."'>"; if($row['intState'] == 0){echo "Entregado";}else{echo "No entregado";}echo"</option>
-                <option value='0'>Entregado</option>
-                <option value='1'>No entregado</option>
-              </select>
-            </div>
-        </div>
-        <input type='hidden' name='id_input' value='".$id."'/>";
-          }
+
+              echo"  <select name='state_input' class='check-text_package'>
+                <option value='".$row['intState']."'>"; if($row['intState'] == 0){echo "Entregado";}else{echo "No entregado";}
+                echo"</option>
+                    <option value='0'>Entregado</option>
+                    <option value='1'>No entregado</option>
+                  </select>
+                </div>
+              </div>
+
+              <input type='hidden' name='id_input' value='".$id."'/>";
+        }
 
           echo"<div class='form-pi-box'>
             <input id='form-pi-button' type='submit' name='submitup' value='Actualizar' for='update-form' />
@@ -158,5 +172,6 @@
   ?>
 
   <?php include("snipescodes/footer.php"); ?>
+
 </body>
 </html>
